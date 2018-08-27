@@ -1,0 +1,3 @@
+use grocery;
+update product
+set image_file = replace(image_file, 'drugrx.png', 'image_uploads/product_images/2018/January/18-01-2018/Default_Product.jpg');

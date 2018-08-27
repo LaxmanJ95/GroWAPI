@@ -1,0 +1,4 @@
+use grocery;
+
+
+alter table order_master add column CARD_NO varchar(10) after total_price;

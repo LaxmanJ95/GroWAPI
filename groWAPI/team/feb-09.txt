@@ -1,0 +1,13 @@
+use grocery;
+INSERT INTO `tax` (`ID`,`COUNTRY`,`COUNTY`,`CITY`,`TAX_RATE`) VALUES (1,'California',NULL,'Dublin','5');
+INSERT INTO `tax` (`ID`,`COUNTRY`,`COUNTY`,`CITY`,`TAX_RATE`) VALUES (2,'California',NULL,'Fremont','7');
+INSERT INTO `tax` (`ID`,`COUNTRY`,`COUNTY`,`CITY`,`TAX_RATE`) VALUES (3,'California',NULL,'Mountain House ','7');
+INSERT INTO `tax` (`ID`,`COUNTRY`,`COUNTY`,`CITY`,`TAX_RATE`) VALUES (4,'California',NULL,'Pleasanton','8');
+INSERT INTO `tax` (`ID`,`COUNTRY`,`COUNTY`,`CITY`,`TAX_RATE`) VALUES (5,'California',NULL,'San Ramon','9');
+
+
+alter table product add column TAXABLE INT(1) default 0;
+UPDATE product SET TAXABLE = 1 
+   WHERE PRODUCT_CLASS = 'FROZEN ITEMS';
+UPDATE product SET TAXABLE = 1 
+   WHERE PRODUCT_CLASS = 'MISC';

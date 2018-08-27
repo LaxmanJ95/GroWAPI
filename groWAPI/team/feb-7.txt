@@ -1,0 +1,39 @@
+use grocery;
+
+CREATE TABLE `payment_messages` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `CODE` varchar(12) DEFAULT NULL,
+  `DESCRIPTION` long DEFAULT NULL,
+  `PAYMENT_ID` INT(11) DEFAULT NULL ,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `payment_errors` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ERROR_CODE` varchar(12) DEFAULT NULL,
+  `ERROR_TEXT` long DEFAULT NULL,
+  `PAYMENT_ID` int(11) DEFAULT NULL ,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `payment` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `RESPONSE_CODE` varchar(12) DEFAULT NULL,
+  `REF_ID` varchar(45),
+  `RAW_RESPONSE_CODE` varchar(12) DEFAULT NULL,
+  `AUTH_CODE` varchar(12),
+  `AVS_RESULT_CODE` varchar(12),
+  `CVV_RESULT_CODE` varchar(12),
+  `CAVV_RESULT_CODE` varchar(12),
+  `TRANS_ID` varchar(45),
+  `REF_TRANS_ID` varchar(45),
+  `TRANS_HASH` varchar(100),
+  `TRANS_REQUEST` varchar(45),
+  
+  `ACCOUNT_NUMBER` varchar(45),
+  `ENTRY_MODE` varchar(45),
+  `ACCOUNT_TYPE` varchar(45),
+  `SPLIT_TENDER_ID` varchar(45),
+  `TRANS_HASH_SHA2` varchar(45),
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;

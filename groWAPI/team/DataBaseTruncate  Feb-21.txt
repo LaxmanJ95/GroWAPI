@@ -1,0 +1,12 @@
+use grocery;
+
+truncate table address;
+truncate table user;
+truncate table cart;
+truncate table wish_list;
+truncate table order_master;
+truncate table order_detail;
+INSERT INTO `grocery`.`user` (`ID`, `USER_NAME`, `FIRST_NAME`, `LAST_NAME`, `EMAIL`, `PASSWORD`, `PHONE_NUMBER`) VALUES ('1', 'admin', 'admin', 'admin', 'test.cloubiot@gmail.com', 'D/3LHqvgadwGEBk3fGv9ig==', '876345644');
+
+/* username:admin
+password:password*/

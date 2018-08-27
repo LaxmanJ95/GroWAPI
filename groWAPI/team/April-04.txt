@@ -1,0 +1,2 @@
+use grocery;
+alter table product add column PRODUCT_EXPIRY varchar(45) after SPECIAL_PRICE;

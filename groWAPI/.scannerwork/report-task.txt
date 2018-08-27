@@ -1,0 +1,6 @@
+projectKey=gro_WAPI_95
+serverUrl=http://localhost:9000
+serverVersion=7.0.0.36138
+dashboardUrl=http://localhost:9000/dashboard/index/gro_WAPI_95
+ceTaskId=AWLOhY-0OIcrgkokj8QW
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWLOhY-0OIcrgkokj8QW

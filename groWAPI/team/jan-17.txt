@@ -1,0 +1,15 @@
+use grocery;
+INSERT INTO `grocery`.`user` (`ID`, `USER_NAME`, `FIRST_NAME`, `LAST_NAME`, `EMAIL`, `PASSWORD`, `PHONE_NUMBER`) VALUES ('26', 'karthik', 'Karthik', 'karthik', 'karthik@gmailkarthik.com', 'D/3LHqvgadwGEBk3fGv9ig==', '7547547444');
+INSERT INTO `grocery`.`user_role_mapping` (`ID`, `USER_ID`, `ROLE_ID`) VALUES ('3', '26', '1');
+alter table order_master modify TOTAL_PRICE decimal(6,2);
+UPDATE `grocery`.`product` SET `IMAGE_FILE`='diet_idly.jpg' WHERE `ID`='256';
+UPDATE `grocery`.`product` SET `IMAGE_FILE`='mukwas.jpg' WHERE `ID`='512';
+UPDATE `grocery`.`product` SET `IMAGE_FILE`='kurkure-butter-masti.png' WHERE `ID`='768';
+UPDATE `grocery`.`product` SET `IMAGE_FILE`='mm_paunbhaji.jpg' WHERE `ID`='1024';
+UPDATE `grocery`.`product` SET `IMAGE_FILE`='sujata-atta.jpeg' WHERE `ID`='1280';
+UPDATE `grocery`.`product` SET `IMAGE_FILE`='nirapara-pickle.jpg' WHERE `ID`='1536';
+UPDATE `grocery`.`product` SET `IMAGE_FILE`='suvaikeralahotmix.jpg' WHERE `ID`='1792';
+UPDATE `grocery`.`product` SET `IMAGE_FILE`='rajgeera-laddu.jpg' WHERE `ID`='2048';
+UPDATE `grocery`.`product` SET `IMAGE_FILE`='khatta-meetha.jpg' WHERE `ID`='2304';
+UPDATE `grocery`.`product` SET `IMAGE_FILE`='hakka-noodles.jpg' WHERE `ID`='257';
+alter table customer_payment modify column PAYMENT decimal(6,2);
